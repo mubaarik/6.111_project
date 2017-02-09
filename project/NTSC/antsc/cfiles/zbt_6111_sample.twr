@@ -1,0 +1,284 @@
+--------------------------------------------------------------------------------
+Release 10.1.03 Trace  (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+/afs/csail.mit.edu/proj/redsocs/Xilinx10.1/ISE/bin/lin64/unwrapped/trce -ise
+/afs/athena.mit.edu/user/m/o/mohamoud/6.111/project/NTSC/antsc/cfiles/cfiles.ise
+-intstyle ise -v 3 -s 4 -xml zbt_6111_sample zbt_6111_sample.ncd -o
+zbt_6111_sample.twr zbt_6111_sample.pcf -ucf
+/afs/athena.mit.edu/user/m/o/mohamoud/6.111/project/NTSC/labkit.ucf
+
+Design file:              zbt_6111_sample.ncd
+Physical constraint file: zbt_6111_sample.pcf
+Device,package,speed:     xc2v6000,bf957,-4 (PRODUCTION 1.121 2008-07-25, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clock_27mhz
+-------------+------------+------------+------------------+--------+
+             |  Setup to  |  Hold to   |                  | Clock  |
+Source       | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------------+--------+
+button_left  |    1.732(R)|    0.662(R)|clk               |   0.000|
+ram0_data<0> |   -1.942(R)|    2.214(R)|clk               |   0.000|
+ram0_data<1> |   -2.304(R)|    2.576(R)|clk               |   0.000|
+ram0_data<2> |   -2.525(R)|    2.797(R)|clk               |   0.000|
+ram0_data<3> |   -2.457(R)|    2.729(R)|clk               |   0.000|
+ram0_data<4> |   -2.144(R)|    2.416(R)|clk               |   0.000|
+ram0_data<5> |   -1.380(R)|    1.652(R)|clk               |   0.000|
+ram0_data<6> |   -0.988(R)|    1.260(R)|clk               |   0.000|
+ram0_data<7> |   -1.888(R)|    2.160(R)|clk               |   0.000|
+ram0_data<8> |   -1.938(R)|    2.210(R)|clk               |   0.000|
+ram0_data<9> |   -1.142(R)|    1.414(R)|clk               |   0.000|
+ram0_data<10>|   -2.554(R)|    2.826(R)|clk               |   0.000|
+ram0_data<11>|   -2.055(R)|    2.327(R)|clk               |   0.000|
+ram0_data<12>|   -2.574(R)|    2.846(R)|clk               |   0.000|
+ram0_data<13>|   -2.331(R)|    2.603(R)|clk               |   0.000|
+ram0_data<14>|   -1.825(R)|    2.097(R)|clk               |   0.000|
+ram0_data<15>|   -1.990(R)|    2.262(R)|clk               |   0.000|
+ram0_data<16>|   -2.236(R)|    2.508(R)|clk               |   0.000|
+ram0_data<17>|   -2.417(R)|    2.689(R)|clk               |   0.000|
+ram0_data<18>|   -2.436(R)|    2.708(R)|clk               |   0.000|
+ram0_data<19>|   -1.730(R)|    2.002(R)|clk               |   0.000|
+ram0_data<20>|   -2.054(R)|    2.326(R)|clk               |   0.000|
+ram0_data<21>|   -0.965(R)|    1.237(R)|clk               |   0.000|
+ram0_data<22>|   -0.640(R)|    0.912(R)|clk               |   0.000|
+ram0_data<23>|   -1.231(R)|    1.503(R)|clk               |   0.000|
+ram0_data<24>|   -0.843(R)|    1.115(R)|clk               |   0.000|
+ram0_data<25>|   -0.579(R)|    0.851(R)|clk               |   0.000|
+ram0_data<26>|   -2.091(R)|    2.363(R)|clk               |   0.000|
+ram0_data<27>|   -1.900(R)|    2.172(R)|clk               |   0.000|
+ram0_data<28>|   -1.947(R)|    2.219(R)|clk               |   0.000|
+ram0_data<29>|   -1.280(R)|    1.552(R)|clk               |   0.000|
+ram0_data<30>|   -2.248(R)|    2.520(R)|clk               |   0.000|
+ram0_data<31>|   -1.593(R)|    1.865(R)|clk               |   0.000|
+ram0_data<32>|   -1.698(R)|    1.970(R)|clk               |   0.000|
+ram0_data<33>|   -1.535(R)|    1.807(R)|clk               |   0.000|
+ram0_data<34>|   -2.064(R)|    2.336(R)|clk               |   0.000|
+ram0_data<35>|   -3.025(R)|    3.297(R)|clk               |   0.000|
+switch<0>    |    6.450(R)|   -0.904(R)|clk               |   0.000|
+switch<1>    |    6.934(R)|    0.931(R)|clk               |   0.000|
+switch<4>    |    6.449(R)|    0.078(R)|clk               |   0.000|
+switch<6>    |    3.213(R)|    1.172(R)|clk               |   0.000|
+switch<7>    |    3.376(R)|    2.328(R)|clk               |   0.000|
+user3<0>     |    3.276(R)|   -0.678(R)|clk               |   0.000|
+user3<1>     |    4.508(R)|   -1.609(R)|clk               |   0.000|
+-------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock tv_in_line_clock1
+---------------+------------+------------+--------------------+--------+
+               |  Setup to  |  Hold to   |                    | Clock  |
+Source         | clk (edge) | clk (edge) |Internal Clock(s)   | Phase  |
+---------------+------------+------------+--------------------+--------+
+switch<2>      |    5.672(R)|   -3.906(R)|analyzer3_clock_OBUF|   0.000|
+switch<5>      |    8.346(R)|   -6.640(R)|analyzer3_clock_OBUF|   0.000|
+tv_in_ycrcb<10>|    8.875(R)|   -3.587(R)|analyzer3_clock_OBUF|   0.000|
+tv_in_ycrcb<11>|    8.803(R)|   -4.123(R)|analyzer3_clock_OBUF|   0.000|
+tv_in_ycrcb<12>|    9.690(R)|   -4.395(R)|analyzer3_clock_OBUF|   0.000|
+tv_in_ycrcb<13>|    8.656(R)|   -3.207(R)|analyzer3_clock_OBUF|   0.000|
+tv_in_ycrcb<14>|    8.311(R)|   -3.924(R)|analyzer3_clock_OBUF|   0.000|
+tv_in_ycrcb<15>|    9.064(R)|   -4.098(R)|analyzer3_clock_OBUF|   0.000|
+tv_in_ycrcb<16>|    9.299(R)|   -3.101(R)|analyzer3_clock_OBUF|   0.000|
+tv_in_ycrcb<17>|   11.430(R)|   -2.824(R)|analyzer3_clock_OBUF|   0.000|
+tv_in_ycrcb<18>|    8.402(R)|   -2.098(R)|analyzer3_clock_OBUF|   0.000|
+tv_in_ycrcb<19>|    7.579(R)|   -3.425(R)|analyzer3_clock_OBUF|   0.000|
+---------------+------------+------------+--------------------+--------+
+
+Clock clock_27mhz to Pad
+------------------+------------+------------------+--------+
+                  | clk (edge) |                  | Clock  |
+Destination       |   to PAD   |Internal Clock(s) | Phase  |
+------------------+------------+------------------+--------+
+Q                 |   13.754(R)|rc/ram_clock      |   0.000|
+                  |   13.754(F)|rc/ram_clock      |   0.000|
+clock_feedback_out|   12.326(R)|rc/ram_clock      |   0.000|
+                  |   12.326(F)|rc/ram_clock      |   0.000|
+disp_ce_b         |   10.617(R)|clk               |   0.000|
+disp_clock        |   14.398(R)|clk               |   0.000|
+disp_data_out     |   12.171(R)|clk               |   0.000|
+disp_reset_b      |   10.826(R)|clk               |   0.000|
+disp_rs           |   11.117(R)|clk               |   0.000|
+led<2>            |   16.486(R)|clk               |   0.000|
+led<3>            |   25.313(R)|clk               |   0.000|
+led<4>            |   25.463(R)|clk               |   0.000|
+led<5>            |   27.279(R)|clk               |   0.000|
+led<6>            |   26.736(R)|clk               |   0.000|
+led<7>            |   25.976(R)|clk               |   0.000|
+ram0_address<0>   |   20.709(R)|clk               |   0.000|
+ram0_address<1>   |   19.990(R)|clk               |   0.000|
+ram0_address<2>   |   21.557(R)|clk               |   0.000|
+ram0_address<3>   |   20.029(R)|clk               |   0.000|
+ram0_address<4>   |   21.635(R)|clk               |   0.000|
+ram0_address<5>   |   22.096(R)|clk               |   0.000|
+ram0_address<6>   |   21.596(R)|clk               |   0.000|
+ram0_address<7>   |   21.352(R)|clk               |   0.000|
+ram0_address<8>   |   22.201(R)|clk               |   0.000|
+ram0_address<9>   |   19.874(R)|clk               |   0.000|
+ram0_address<10>  |   22.208(R)|clk               |   0.000|
+ram0_address<11>  |   24.107(R)|clk               |   0.000|
+ram0_address<12>  |   22.016(R)|clk               |   0.000|
+ram0_address<13>  |   23.347(R)|clk               |   0.000|
+ram0_address<14>  |   26.692(R)|clk               |   0.000|
+ram0_address<15>  |   24.103(R)|clk               |   0.000|
+ram0_address<16>  |   22.342(R)|clk               |   0.000|
+ram0_address<17>  |   23.906(R)|clk               |   0.000|
+ram0_address<18>  |   25.606(R)|clk               |   0.000|
+ram0_clk          |   12.223(R)|rc/ram_clock      |   0.000|
+                  |   12.223(F)|rc/ram_clock      |   0.000|
+ram0_data<0>      |   11.825(R)|clk               |   0.000|
+ram0_data<1>      |   12.112(R)|clk               |   0.000|
+ram0_data<2>      |   11.010(R)|clk               |   0.000|
+ram0_data<3>      |   12.118(R)|clk               |   0.000|
+ram0_data<4>      |   11.012(R)|clk               |   0.000|
+ram0_data<5>      |   10.978(R)|clk               |   0.000|
+ram0_data<6>      |   10.990(R)|clk               |   0.000|
+ram0_data<7>      |   10.557(R)|clk               |   0.000|
+ram0_data<8>      |   10.900(R)|clk               |   0.000|
+ram0_data<9>      |   12.070(R)|clk               |   0.000|
+ram0_data<10>     |   11.802(R)|clk               |   0.000|
+ram0_data<11>     |   12.082(R)|clk               |   0.000|
+ram0_data<12>     |   11.804(R)|clk               |   0.000|
+ram0_data<13>     |   11.804(R)|clk               |   0.000|
+ram0_data<14>     |   11.807(R)|clk               |   0.000|
+ram0_data<15>     |   11.799(R)|clk               |   0.000|
+ram0_data<16>     |   11.225(R)|clk               |   0.000|
+ram0_data<17>     |   10.525(R)|clk               |   0.000|
+ram0_data<18>     |   10.939(R)|clk               |   0.000|
+ram0_data<19>     |   10.990(R)|clk               |   0.000|
+ram0_data<20>     |   10.717(R)|clk               |   0.000|
+ram0_data<21>     |   12.163(R)|clk               |   0.000|
+ram0_data<22>     |   13.372(R)|clk               |   0.000|
+ram0_data<23>     |   12.171(R)|clk               |   0.000|
+ram0_data<24>     |   13.376(R)|clk               |   0.000|
+ram0_data<25>     |   13.654(R)|clk               |   0.000|
+ram0_data<26>     |   10.903(R)|clk               |   0.000|
+ram0_data<27>     |   12.727(R)|clk               |   0.000|
+ram0_data<28>     |   12.152(R)|clk               |   0.000|
+ram0_data<29>     |   13.619(R)|clk               |   0.000|
+ram0_data<30>     |   12.165(R)|clk               |   0.000|
+ram0_data<31>     |   13.611(R)|clk               |   0.000|
+ram0_data<32>     |   13.652(R)|clk               |   0.000|
+ram0_data<33>     |   13.639(R)|clk               |   0.000|
+ram0_data<34>     |   13.650(R)|clk               |   0.000|
+ram0_data<35>     |   11.815(R)|clk               |   0.000|
+ram0_we_b         |   16.653(R)|clk               |   0.000|
+user3<31>         |   16.560(R)|tv_in_clock_OBUF  |   0.000|
+vga_out_blank_b   |   12.862(R)|clk               |   0.000|
+vga_out_blue<2>   |   15.092(R)|clk               |   0.000|
+vga_out_blue<3>   |   14.903(R)|clk               |   0.000|
+vga_out_blue<4>   |   14.095(R)|clk               |   0.000|
+vga_out_blue<5>   |   14.525(R)|clk               |   0.000|
+vga_out_blue<6>   |   13.671(R)|clk               |   0.000|
+vga_out_blue<7>   |   14.049(R)|clk               |   0.000|
+vga_out_green<2>  |   14.107(R)|clk               |   0.000|
+vga_out_green<3>  |   13.992(R)|clk               |   0.000|
+vga_out_green<4>  |   15.331(R)|clk               |   0.000|
+vga_out_green<5>  |   14.698(R)|clk               |   0.000|
+vga_out_green<6>  |   15.396(R)|clk               |   0.000|
+vga_out_green<7>  |   15.198(R)|clk               |   0.000|
+vga_out_hsync     |   12.339(R)|clk               |   0.000|
+vga_out_red<2>    |   15.164(R)|clk               |   0.000|
+vga_out_red<3>    |   14.955(R)|clk               |   0.000|
+vga_out_red<4>    |   15.759(R)|clk               |   0.000|
+vga_out_red<5>    |   14.841(R)|clk               |   0.000|
+vga_out_red<6>    |   14.990(R)|clk               |   0.000|
+vga_out_red<7>    |   14.644(R)|clk               |   0.000|
+vga_out_vsync     |   14.075(R)|clk               |   0.000|
+------------------+------------+------------------+--------+
+
+Clock tv_in_line_clock1 to Pad
+-----------------+------------+--------------------+--------+
+                 | clk (edge) |                    | Clock  |
+Destination      |   to PAD   |Internal Clock(s)   | Phase  |
+-----------------+------------+--------------------+--------+
+analyzer3_data<0>|   17.739(R)|analyzer3_clock_OBUF|   0.000|
+analyzer3_data<1>|   16.250(R)|analyzer3_clock_OBUF|   0.000|
+analyzer3_data<2>|   12.440(R)|analyzer3_clock_OBUF|   0.000|
+-----------------+------------+--------------------+--------+
+
+Clock to Setup on destination clock clock_27mhz
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+clock_27mhz      |   38.081|         |         |         |
+tv_in_line_clock1|   20.501|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock tv_in_line_clock1
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+clock_27mhz      |   13.914|         |         |         |
+tv_in_line_clock1|   18.461|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Pad to Pad
+-----------------+-------------------+---------+
+Source Pad       |Destination Pad    |  Delay  |
+-----------------+-------------------+---------+
+clock_27mhz      |tv_in_clock        |   13.466|
+clock_27mhz      |vga_out_pixel_clock|   11.778|
+switch<7>        |led<3>             |   17.546|
+switch<7>        |led<4>             |   17.378|
+switch<7>        |led<5>             |   16.113|
+switch<7>        |led<6>             |   17.472|
+switch<7>        |led<7>             |   16.465|
+switch<7>        |ram0_address<0>    |   15.995|
+switch<7>        |ram0_address<1>    |   14.823|
+switch<7>        |ram0_address<2>    |   16.272|
+switch<7>        |ram0_address<3>    |   14.795|
+switch<7>        |ram0_address<4>    |   16.072|
+switch<7>        |ram0_address<5>    |   16.237|
+switch<7>        |ram0_address<6>    |   15.363|
+switch<7>        |ram0_address<7>    |   15.615|
+switch<7>        |ram0_address<8>    |   16.968|
+switch<7>        |ram0_address<9>    |   17.234|
+switch<7>        |ram0_address<10>   |   15.216|
+switch<7>        |ram0_address<11>   |   16.595|
+switch<7>        |ram0_address<12>   |   15.202|
+switch<7>        |ram0_address<13>   |   15.333|
+switch<7>        |ram0_address<14>   |   16.350|
+switch<7>        |ram0_address<15>   |   15.135|
+switch<7>        |ram0_address<16>   |   15.212|
+switch<7>        |ram0_address<17>   |   16.821|
+switch<7>        |ram0_address<18>   |   17.834|
+switch<7>        |ram0_we_b          |   10.951|
+tv_in_line_clock1|analyzer3_clock    |   16.423|
+tv_in_line_clock1|analyzer3_data<3>  |   14.375|
+tv_in_ycrcb<16>  |analyzer3_data<0>  |   16.945|
+tv_in_ycrcb<17>  |analyzer3_data<1>  |   15.067|
+-----------------+-------------------+---------+
+
+
+Analysis completed Sun Dec 11 19:46:35 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 1840 MB
+
+
+

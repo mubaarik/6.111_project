@@ -1,0 +1,50 @@
+
+module centroid(clk, vclk, fvh, dv, din, ntsc_addr, c_x, c_y);
+
+   input 	 clk;	// system clock
+   input 	 vclk;	// video clock from camera
+   input [2:0] 	 fvh;
+   input 	 dv;
+   input [7:0] 	 din;
+   output [10:0] c_y;
+   output [9:0] c_y;
+   parameter 	 COL_START = 10'd00;
+   parameter 	 ROW_START = 10'd00;
+   
+   reg [32:0] sum_x = 0;
+   reg [32:0] sum_y = 0;
+   reg [19:0] white_count=0;
+   // here put the luminance data from the ntsc decoder into the ram
+   // this is for 1024 * 788 XGA display
+
+   reg [9:0] 	 col = 0;
+   reg [9:0] 	 row = 0;
+   reg [17:0] 	 vdata = 0;
+   reg 		 vwe;
+   reg 		 old_dv;
+   reg 		 old_frame;	// frames are even / odd interlaced
+   reg 		 even_odd;	// decode interlaced frame to this wire
+   
+   wire 	 frame = fvh[2];
+   wire 	 frame_edge = frame & ~old_frame;
+
+   always @ (posedge vclk) //LLC1 is reference
+     begin
+	old_dv <= dv;
+	vwe <= dv && !fvh[2] & ~old_dv; // if data valid, write it
+	old_frame <= frame;
+	even_odd = frame_edge ? ~even_odd : even_odd;
+
+	if (!fvh[2])
+	  begin
+	     col <= fvh[0] ? COL_START : 
+		    (!fvh[2] && !fvh[1] && dv && (col < 1024)) ? col + 1 : col;
+	     row <= fvh[1] ? ROW_START : 
+		    (!fvh[2] && fvh[0] && (row < 768)) ? row + 1 : row;
+	     vdata <= (dv && !fvh[2]) ? din : vdata;
+	  end
+     end
+
+   
+   
+endmodule // ntsc_to_zbt

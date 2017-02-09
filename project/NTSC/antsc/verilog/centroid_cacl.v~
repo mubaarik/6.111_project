@@ -1,0 +1,48 @@
+module center_calc(clk, hcount, vcount,pixel, cx,cy);
+   input clk;
+   input [10:0] hcount;
+   input [9:0] vcount;
+   input [7:0] pixel;
+   output [10:0] cx;
+   output [9:0] cy;
+   
+   wire divide = (hcount==990 & vcount==767);
+   reg [31:0] sum_x, sum_y;
+   reg [19:0] white_count;
+   reg [10:0] last_hcount;
+   reg [9:0] last_vcount;
+   wire ready;
+   reg last_ready;
+   wire reset = (hcount ==0 & vcount==0); 
+   always @ (posedge clk) begin
+      last_ready<=ready;
+      last_hcount<=hcount;
+      last_vcount<=vcount;
+      if (reset) begin 
+	sum_x<= 0;
+	sum_y<=0;
+	white_count<=0;
+	end 
+      else if ((last_hcount!=hcount) &&(hcount<=1023 & vcount<=767))
+	
+	sum_x<=(pixel>3)?sum_x+hcount:sum_x;
+	sum_y<=(pixel>3)?sum_y+vcout: sum_y;
+	white_count<=(pixel>3)?white_count+1:white_count;
+	
+	 
+	end 
+   end
+	wire [31:0] x, remainder, y;
+
+  _divider #(parameter WIDTH = 32) 
+ div1 (.clk(clk), .sign(0), .start(divide),
+   .dividend(sum_x), .divisor({12'b0, white_count}),
+   .quotient(x), .remainder(remainder),.ready(ready));
+
+  _divider #(parameter WIDTH = 32) 
+ div2 (.clk(clk), .sign(0), .start(divide),
+   .dividend(sum_y), .divisor({12'b0, white_count}),
+   .quotient(y), .remainder(remainder),.ready(ready));
+assign cx=(last_ready!=ready & ready)?x[10:0]: cx;
+assign cy=(last_ready!=ready & ready)?y[9:0]: cy;
+endmodule

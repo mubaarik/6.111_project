@@ -1,0 +1,4 @@
+module (clk, height, width, x, y, tx, ty);
+	input [9:0] x, height;
+	input [10:0] y, width;
+        input clk; 

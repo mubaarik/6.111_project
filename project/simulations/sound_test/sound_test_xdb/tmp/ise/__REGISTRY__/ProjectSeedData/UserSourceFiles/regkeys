@@ -1,0 +1,15 @@
+NUM_USER_FILES
+4
+s
+user_file_1
+../../../lab5/sound.v
+s
+user_file_2
+../../../lab5/bram.v
+s
+user_file_3
+../../../lab5/firFilter.v
+s
+user_file_4
+../../../lab5/coeffs31.v
+s

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RootFolder label="COREGEN" treetype="folder" language="COREGEN">
+	<Folder label="VERILOG Component Instantiation" treetype="folder">
+		<Template label="sqrt" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+sqrt YourInstanceName (
+    .x_in(x_in), // Bus [21 : 0] 
+    .x_out(x_out), // Bus [11 : 0] 
+    .rdy(rdy),
+    .clk(clk));
+
+ 
+		</Template>
+	</Folder>
+	<Folder label="VHDL Component Instantiation" treetype="folder">
+		<Template label="sqrt" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component sqrt
+    port (
+    x_in: IN std_logic_VECTOR(21 downto 0);
+    x_out: OUT std_logic_VECTOR(11 downto 0);
+    rdy: OUT std_logic;
+    clk: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : sqrt
+        port map (
+            x_in =&gt; x_in,
+            x_out =&gt; x_out,
+            rdy =&gt; rdy,
+            clk =&gt; clk);
+ 
+		</Template>
+	</Folder>
+</RootFolder>

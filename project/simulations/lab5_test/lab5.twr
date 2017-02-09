@@ -1,0 +1,139 @@
+--------------------------------------------------------------------------------
+Release 10.1.03 Trace  (lin64)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+/afs/csail.mit.edu/proj/redsocs/Xilinx10.1/ISE/bin/lin64/unwrapped/trce -ise
+/afs/athena.mit.edu/user/m/o/mohamoud/6.111/project/simulations/lab5_test/lab5_test.ise
+-intstyle ise -v 3 -s 4 -xml lab5 lab5.ncd -o lab5.twr lab5.pcf -ucf
+/afs/athena.mit.edu/user/m/o/mohamoud/6.111/lab5/labkit.ucf
+
+Design file:              lab5.ncd
+Physical constraint file: lab5.pcf
+Device,package,speed:     xc2v6000,bf957,-4 (PRODUCTION 1.121 2008-07-25, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock ac97_bit_clock
+-------------+------------+------------+--------------------+--------+
+             |  Setup to  |  Hold to   |                    | Clock  |
+Source       | clk (edge) | clk (edge) |Internal Clock(s)   | Phase  |
+-------------+------------+------------+--------------------+--------+
+ac97_sdata_in|    0.042(F)|    0.507(F)|analyzer1_clock_OBUF|   0.000|
+-------------+------------+------------+--------------------+--------+
+
+Setup/Hold to clock clock_27mhz
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+button3     |    3.249(R)|   -1.648(R)|clock_27mhz_BUFGP |   0.000|
+button_down |    1.034(R)|    0.506(R)|clock_27mhz_BUFGP |   0.000|
+button_enter|    3.663(R)|   -1.575(R)|clock_27mhz_BUFGP |   0.000|
+button_up   |    1.006(R)|    0.770(R)|clock_27mhz_BUFGP |   0.000|
+switch<0>   |    3.190(R)|   -1.491(R)|clock_27mhz_BUFGP |   0.000|
+switch<1>   |    4.250(R)|   -1.887(R)|clock_27mhz_BUFGP |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock ac97_bit_clock to Pad
+------------------+------------+--------------------+--------+
+                  | clk (edge) |                    | Clock  |
+Destination       |   to PAD   |Internal Clock(s)   | Phase  |
+------------------+------------+--------------------+--------+
+ac97_sdata_out    |   14.567(R)|analyzer1_clock_OBUF|   0.000|
+ac97_synch        |   14.301(R)|analyzer1_clock_OBUF|   0.000|
+analyzer1_data<1> |   17.989(R)|analyzer1_clock_OBUF|   0.000|
+analyzer1_data<3> |   18.114(R)|analyzer1_clock_OBUF|   0.000|
+analyzer3_data<8> |   18.621(F)|analyzer1_clock_OBUF|   0.000|
+analyzer3_data<9> |   20.495(F)|analyzer1_clock_OBUF|   0.000|
+analyzer3_data<10>|   17.589(F)|analyzer1_clock_OBUF|   0.000|
+analyzer3_data<11>|   23.420(F)|analyzer1_clock_OBUF|   0.000|
+analyzer3_data<12>|   18.029(F)|analyzer1_clock_OBUF|   0.000|
+analyzer3_data<13>|   19.969(F)|analyzer1_clock_OBUF|   0.000|
+analyzer3_data<14>|   19.010(F)|analyzer1_clock_OBUF|   0.000|
+analyzer3_data<15>|   19.022(F)|analyzer1_clock_OBUF|   0.000|
+------------------+------------+--------------------+--------+
+
+Clock clock_27mhz to Pad
+-----------------+------------+------------------+--------+
+                 | clk (edge) |                  | Clock  |
+Destination      |   to PAD   |Internal Clock(s) | Phase  |
+-----------------+------------+------------------+--------+
+analyzer1_data<0>|   13.080(R)|clock_27mhz_BUFGP |   0.000|
+analyzer3_clock  |   18.692(R)|clock_27mhz_BUFGP |   0.000|
+analyzer3_data<0>|   13.487(R)|clock_27mhz_BUFGP |   0.000|
+analyzer3_data<1>|   12.720(R)|clock_27mhz_BUFGP |   0.000|
+analyzer3_data<2>|   12.673(R)|clock_27mhz_BUFGP |   0.000|
+analyzer3_data<3>|   13.584(R)|clock_27mhz_BUFGP |   0.000|
+analyzer3_data<4>|   13.545(R)|clock_27mhz_BUFGP |   0.000|
+analyzer3_data<5>|   13.816(R)|clock_27mhz_BUFGP |   0.000|
+analyzer3_data<6>|   13.602(R)|clock_27mhz_BUFGP |   0.000|
+analyzer3_data<7>|   13.928(R)|clock_27mhz_BUFGP |   0.000|
+audio_reset_b    |   12.821(R)|clock_27mhz_BUFGP |   0.000|
+led<0>           |   17.379(R)|clock_27mhz_BUFGP |   0.000|
+led<1>           |   15.276(R)|clock_27mhz_BUFGP |   0.000|
+led<2>           |   15.283(R)|clock_27mhz_BUFGP |   0.000|
+led<3>           |   15.332(R)|clock_27mhz_BUFGP |   0.000|
+led<4>           |   15.847(R)|clock_27mhz_BUFGP |   0.000|
+led<5>           |   13.477(R)|clock_27mhz_BUFGP |   0.000|
+led<6>           |   13.076(R)|clock_27mhz_BUFGP |   0.000|
+led<7>           |   12.802(R)|clock_27mhz_BUFGP |   0.000|
+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock ac97_bit_clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ac97_bit_clock |    7.913|         |    8.731|    4.198|
+clock_27mhz    |    3.370|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock_27mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ac97_bit_clock |    3.276|    5.847|         |         |
+clock_27mhz    |   18.314|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+-----------------+---------+
+Source Pad     |Destination Pad  |  Delay  |
+---------------+-----------------+---------+
+ac97_bit_clock |analyzer1_clock  |   17.015|
+ac97_sdata_in  |analyzer1_data<2>|   14.661|
+button_enter   |led<6>           |   12.907|
+---------------+-----------------+---------+
+
+
+Analysis completed Mon Dec 12 14:45:44 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 378 MB
+
+
+

@@ -1,0 +1,9 @@
+MO mybram NULL ../../../lab5/bram.v vlg48/mybram.bin 1481566757
+MO coeffs31 NULL ../../../lab5/coeffs31.v vlg76/coeffs31.bin 1481566757
+MO ac97commands NULL ../../../lab5/ac97commands.v vlg5A/ac97commands.bin 1481566757
+MO lab5audio NULL ../../../lab5/audio.v vlg16/lab5audio.bin 1481566757
+MO lab5 NULL ../../../lab5/sound_lab.v vlg54/lab5.bin 1481566757
+MO ac97 NULL ../../../lab5/ac97.v vlg5C/ac97.bin 1481566757
+MO debounce NULL ../../../lab5/debounce.v vlg1D/debounce.bin 1481566757
+MO fir31 NULL ../../../lab5/firFilter.v vlg1D/fir31.bin 1481566757
+MO sound NULL ../../../lab5/sound.v vlg6D/sound.bin 1481566757

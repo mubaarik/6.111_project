@@ -1,0 +1,45 @@
+# //  ModelSim SE 6.4a Aug 28 2008 Linux 3.13.0-32-generic
+# //
+# //  Copyright 1991-2008 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {test_bench.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vlog 6.4a Compiler 2008.08 Aug 28 2008
+# -- Compiling module n20_divider
+# 
+# Top level modules:
+# 	n20_divider
+# Model Technology ModelSim SE vlog 6.4a Compiler 2008.08 Aug 28 2008
+# -- Compiling module transform
+# 
+# Top level modules:
+# 	transform
+# Model Technology ModelSim SE vlog 6.4a Compiler 2008.08 Aug 28 2008
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# Model Technology ModelSim SE vlog 6.4a Compiler 2008.08 Aug 28 2008
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -lib work -t 1ps test_bench glbl 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: coord_transform.v(30): (vopt-2241) Connection width does not match width of port 'divisor'.
+# ** Error: coord_transform.v(30): Port 'quotation' not found in module (5th connection).
+# ** Error: coord_transform.v(30): Port 'rfd' not found in module (7th connection).
+# ** Warning: coord_transform.v(38): (vopt-2241) Connection width does not match width of port 'divisor'.
+# ** Error: coord_transform.v(38): Port 'quotation' not found in module (5th connection).
+# ** Error: coord_transform.v(38): Port 'rfd' not found in module (7th connection).
+# Optimization failed
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./test_bench.fdo PAUSED at line 9

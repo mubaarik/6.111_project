@@ -1,0 +1,41 @@
+# //  ModelSim SE 6.4a Aug 28 2008 Linux 3.13.0-105-generic
+# //
+# //  Copyright 1991-2008 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {tf_test.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vlog 6.4a Compiler 2008.08 Aug 28 2008
+# -- Compiling module n20_divider
+# 
+# Top level modules:
+# 	n20_divider
+# Model Technology ModelSim SE vlog 6.4a Compiler 2008.08 Aug 28 2008
+# -- Compiling module transform
+# 
+# Top level modules:
+# 	transform
+# Model Technology ModelSim SE vlog 6.4a Compiler 2008.08 Aug 28 2008
+# -- Compiling module tf_test
+# 
+# Top level modules:
+# 	tf_test
+# Model Technology ModelSim SE vlog 6.4a Compiler 2008.08 Aug 28 2008
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -lib work -t 1ps tf_test glbl 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: n20_divider.v(78): Module 'SDIVIDER_V3_0' is not defined.
+# ** Error: n20_divider.v(78): Module 'SDIVIDER_V3_0' is not defined.
+# Optimization failed
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./tf_test.fdo PAUSED at line 9

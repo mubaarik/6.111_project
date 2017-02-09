@@ -1,0 +1,70 @@
+`timescale 1ns / 1ps
+//////
+///Module to perform erosion
+///Mubarik Mohamoud
+/////
+module erode (clk,hcount,vcount, pixel, color);
+	input wire clk;
+	
+	input [7:0] pixel;
+	input [10:0] hcount;
+	input [9:0] vcount;
+	output reg [7:0] color;
+	reg [527:0] row1;
+	reg [527:0] row2;
+	reg [527:0] row3;
+	
+	reg [1023:0] row;
+	reg [8:0] dialate;
+        wire write = (hcount == 525);
+	////ram 
+	reg [9:0] addr;
+	reg [527:0] data;
+	wire [527:0] spo;
+	//block_ram brm( .a(addr),.d(data), .clk(clk), .we(write), .spo(spo));
+	mybram #(.LOGSIZE(10), .WIDTH(528))
+              bram(.addr(addr),
+               .clk(clk),
+               .din(data),
+               .dout(spo),
+               .we(write));
+	always @(posedge clk) begin
+	    if(vcount==0& hcount>3) begin 
+		case(hcount[1:0])
+		   2'b0: begin 
+			addr = 0;
+			row1 <= spo;
+			end 
+		   2'b1:  begin 
+			addr = 1;
+			row2 <= spo;end
+		   2'b10: begin 
+			addr = 2;
+			row3<=spo;end
+		endcase 
+	  end  
+	  else if(hcount==0& vcount>527) begin
+		addr = vcount+1;
+		row1<=row2;
+		row2<=row3;
+		row3<=spo; 
+	  end
+	  else if(hcount>123&vcount>=527) begin 
+		addr=vcount;
+		data <= row[524:0]; 
+	end 
+	end 
+	always @(posedge clk) begin
+	  if (hcount>0&&hcount>527&&vcount>0&&vcount>527) begin
+	  	dialate = {row1[hcount], row1[hcount-1], row1[hcount+1],row2[hcount], row2[hcount-1], row2[hcount+1],row3[hcount], row3[hcount-1], row3[hcount+1]};
+		color <= (dialate>0)?8'hFF:8'h0;
+	        row[hcount]<=(pixel>0)?1:0;
+	  end
+	else begin 
+		color <= 8'h0;
+	        row[hcount]<=0;
+	end 
+	
+	end
+      
+endmodule 

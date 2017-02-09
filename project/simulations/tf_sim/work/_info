@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/afs/athena.mit.edu/user/m/o/mohamoud/6.111/project/simulations/tf_sim
+T_opt
+VDJQ9[oGN9874Q@[I[G`dX1
+04 8 4 work tf_testb fast 0
+04 4 4 work glbl fast 0
+=1--584ade12-47dfe-fd4
+o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver
+OE;O;6.4a;39
+vglbl
+!s100 T?5S;>bN`@zG_25]R_4A33
+IB;@1jEXmEfQXL`;Kf0IBZ3
+VnN]4Gon>inod6>M^M2[SV1
+w1202685744
+8/afs/csail.mit.edu/proj/redsocs/Xilinx10.1/ISE/verilog/src/glbl.v
+F/afs/csail.mit.edu/proj/redsocs/Xilinx10.1/ISE/verilog/src/glbl.v
+L0 5
+Z1 OE;L;6.4a;39
+r1
+!s85 0
+31
+Z2 o+acc -L mtiAvm -L mtiOvm -L mtiUPF
+vn20_divider
+I6zlHjO5UTf;I^OoWhki>S1
+Vj`N5LM5R;`d1kF:UY9kaB0
+w1481302176
+8n20_divider.v
+Fn20_divider.v
+L0 40
+R1
+r1
+31
+R2
+!s100 J:^1Si64@AP@F7TM;6oe81
+!s85 0
+vtf_test
+I6>9P:nOfimC7gN5?b^VhX0
+VLePZM2B4[?:MHUf]K8EZZ0
+w1481302413
+8tf_test.v
+Ftf_test.v
+L0 25
+R1
+r1
+31
+R2
+!s100 @`a2nfTGJ?GNkBF]fm?U52
+!s85 0
+vtf_testb
+IJX3bT=Y@A@mh1SUSLm[<03
+Vf:TiNdXM99g6lCW28IVe02
+w1481301511
+8tf_testb.v
+Ftf_testb.v
+L0 25
+R1
+r1
+31
+R2
+!s100 EO=aO^a:T]XbT:OAA1I3]0
+!s85 0
+vtransform
+IziQAJ4lQT0MAJEH8RVWF30
+VikPjP@bQNjDM=F^3=gaz`1
+w1481302041
+8coord_transform.v
+Fcoord_transform.v
+L0 1
+R1
+r1
+31
+R2
+!s100 I=jIeHY`=;o_^]cgka0RD3
+!s85 0

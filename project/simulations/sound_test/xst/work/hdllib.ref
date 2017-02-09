@@ -1,0 +1,4 @@
+MO mybram NULL ../../../lab5/bram.v vlg48/mybram.bin 1481502384
+MO coeffs31 NULL ../../../lab5/coeffs31.v vlg76/coeffs31.bin 1481502384
+MO recorder NULL ../../../lab5/sound.v vlg6E/recorder.bin 1481502384
+MO fir31 NULL ../../../lab5/firFilter.v vlg1D/fir31.bin 1481502384

@@ -1,0 +1,71 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/afs/athena.mit.edu/user/m/o/mohamoud/6.111/project/simulations/dist_sim
+T_opt
+Z1 V6;VEV930ehca`jz;af[;l0
+Z2 04 8 4 work dist_sim fast 0
+Z3 04 4 4 work glbl fast 0
+Z4 =1-f44d304679a2-584a27e0-62e80-feb
+Z5 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver
+Z6 OE;O;6.4a;39
+T_opt1
+VlGHK>K;b6_f8dO??NDo:20
+R2
+R3
+Z7 =1-f44d30467159-584a2dd7-c19bf-534b
+R5
+R6
+vdist
+Z8 I?1<]S@EdbgHf5[WEH`nd;0
+Z9 V=m=K3RoWGaZC`jIWmGKgl0
+Z10 w1481256404
+Z11 8distance.v
+Z12 Fdistance.v
+L0 1
+Z13 OE;L;6.4a;39
+r1
+31
+Z14 o+acc -L mtiAvm -L mtiOvm -L mtiUPF
+Z15 !s100 DMk<_SSDJl`eG2078Q9kX3
+!s85 0
+vdist_sim
+Z16 ICkBoLzN2A:=I4f68BB6lb3
+Z17 VH3m7N=?G`:MCDM_Z2c6_81
+Z18 w1481256299
+Z19 8dist_sim.v
+Z20 Fdist_sim.v
+L0 25
+R13
+r1
+31
+R14
+Z21 !s100 hikaGCLIec<5>Z<X5Dz`f0
+!s85 0
+vglbl
+Z22 IB;@1jEXmEfQXL`;Kf0IBZ3
+Z23 VnN]4Gon>inod6>M^M2[SV1
+Z24 w1202685744
+Z25 8/afs/csail.mit.edu/proj/redsocs/Xilinx10.1/ISE/verilog/src/glbl.v
+Z26 F/afs/csail.mit.edu/proj/redsocs/Xilinx10.1/ISE/verilog/src/glbl.v
+L0 5
+R13
+r1
+31
+R14
+Z27 !s100 T?5S;>bN`@zG_25]R_4A33
+!s85 0
+vsqrt
+Z28 IjL[<RdMaFH3TEjlobHkG32
+Z29 VUf><YD@M07S;58aK=]<d=1
+Z30 w1481256047
+Z31 8sqrt.v
+Z32 Fsqrt.v
+L0 39
+R13
+r1
+31
+R14
+Z33 !s100 PLK1WZ5OoRh9nZT`843LM0
+!s85 0

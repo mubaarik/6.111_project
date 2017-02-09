@@ -1,0 +1,4 @@
+verilog work "../../../lab5/coeffs31.v"
+verilog work "../../../lab5/firFilter.v"
+verilog work "../../../lab5/bram.v"
+verilog work "../../../lab5/sound.v"

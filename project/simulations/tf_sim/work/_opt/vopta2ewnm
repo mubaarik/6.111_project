@@ -1,0 +1,51 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/afs/athena.mit.edu/user/m/o/mohamoud/6.111/project/simulations/tf_sim
+T_opt
+Z1 VDJQ9[oGN9874Q@[I[G`dX1
+Z2 04 8 4 work tf_testb fast 0
+Z3 04 4 4 work glbl fast 0
+Z4 =1--584ade12-47dfe-fd4
+Z5 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver
+Z6 OE;O;6.4a;39
+vglbl
+Z7 IB;@1jEXmEfQXL`;Kf0IBZ3
+Z8 VnN]4Gon>inod6>M^M2[SV1
+Z9 w1202685744
+Z10 8/afs/csail.mit.edu/proj/redsocs/Xilinx10.1/ISE/verilog/src/glbl.v
+Z11 F/afs/csail.mit.edu/proj/redsocs/Xilinx10.1/ISE/verilog/src/glbl.v
+L0 5
+Z12 OE;L;6.4a;39
+r1
+31
+Z13 o+acc -L mtiAvm -L mtiOvm -L mtiUPF
+Z14 !s100 T?5S;>bN`@zG_25]R_4A33
+!s85 0
+vtf_testb
+Z15 IJX3bT=Y@A@mh1SUSLm[<03
+Z16 Vf:TiNdXM99g6lCW28IVe02
+Z17 w1481301511
+Z18 8tf_testb.v
+Z19 Ftf_testb.v
+L0 25
+R12
+r1
+31
+R13
+Z20 !s100 EO=aO^a:T]XbT:OAA1I3]0
+!s85 0
+vtransform
+Z21 Ia5d3`JPc_ni`^iomda31`2
+Z22 VMXU[gHD2jSnck[F;?B`>`3
+Z23 w1481301503
+Z24 8coord_transform.v
+Z25 Fcoord_transform.v
+L0 1
+R12
+r1
+31
+R13
+Z26 !s100 >]1J@?iPJYR<kGoEhQ@cF2
+!s85 0
